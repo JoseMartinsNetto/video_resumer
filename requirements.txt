@@ -1,0 +1,6 @@
+pytube==15.0.0
+PyQt6==6.6.1
+pydub==0.25.1
+vosk==0.3.44
+mad-whisper-progress==20230918
+librosa==0.10.1

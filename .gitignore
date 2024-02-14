@@ -1,0 +1,11 @@
+results/
+.venv/
+*.wav
+*.mp3
+*.mp4
+build/
+downloads/
+.vscode/
+.DS_Store
+pyrightconfig.json
+resources/models/
