@@ -10,8 +10,10 @@ class TextResumer:
         tokenizer = T5Tokenizer.from_pretrained(model_name)
         model = T5ForConditionalGeneration.from_pretrained(model_name)
 
+        
+
         # Preparar o texto para sumarização
-        input_ids = tokenizer.encode("summarize: " + self.text, return_tensors="pt", max_length=1024, truncation=True)
+        input_ids = tokenizer.encode("summarize: " + self.text, return_tensors="pt", max_length=150, truncation=True)
 
         # Gerar o resumo
         summary_ids = model.generate(input_ids, max_length=200, min_length=50, length_penalty=2.0, num_beams=4, early_stopping=True)
